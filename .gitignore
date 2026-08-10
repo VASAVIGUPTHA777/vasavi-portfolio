@@ -1,0 +1,29 @@
+# Environment variables — NEVER commit real secrets
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+
+# Prisma generated client (regenerated via prisma generate)
+# node_modules/.prisma is already excluded
+
+# IDE / OS
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeScript cache
+*.tsbuildinfo

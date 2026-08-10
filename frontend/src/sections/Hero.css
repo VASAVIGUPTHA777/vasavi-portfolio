@@ -1,0 +1,82 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--nav-height, 70px);
+}
+
+.hero__container {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.hero__badge {
+  color: var(--accent, #10B981);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero__name {
+  color: var(--accent, #10B981);
+}
+
+.hero__headline {
+  font-size: 1.75rem;
+  color: var(--text-secondary, #9CA3AF);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero__summary {
+  max-width: 600px;
+  color: var(--text-secondary, #9CA3AF);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius-sm, 6px);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition, all 0.3s ease);
+}
+
+.btn--primary {
+  background: var(--accent, #10B981);
+  color: #111;
+}
+
+.btn--primary:hover {
+  background: var(--accent-hover, #059669);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.btn--secondary {
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  color: var(--text-primary, #fff);
+}
+
+.btn--secondary:hover {
+  border-color: var(--accent, #10B981);
+  color: var(--accent, #10B981);
+}
